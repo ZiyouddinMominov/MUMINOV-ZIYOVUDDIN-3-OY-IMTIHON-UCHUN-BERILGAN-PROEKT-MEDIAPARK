@@ -1,0 +1,265 @@
+// HEADER TOP START
+.header__top {
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.header__top--display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__top__logos {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header__top__logos__one {
+  a {
+    font-weight: 400;
+    font-family: golos-text-regular, sans-serif;
+    font-size: 12px;
+    color: #222;
+  }
+}
+.header__top__logos__two {
+  a {
+    font-weight: 400;
+    font-family: golos-text-regular, sans-serif;
+    font-size: 12px;
+    color: #222;
+  }
+}
+.header__top__nav__list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  li {
+    a {
+      font-weight: 400;
+      font-family: golos-text-regular, sans-serif;
+      font-size: 12px;
+      color: #222;
+    }
+  }
+}
+.display-header {
+  display: none;
+}
+// HEADER TOP END
+// HEADER CENTER START
+.header__center {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+.header__center__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__center__logo--left {
+  display: none;
+}
+.header__center__logo--center {
+  display: block;
+}
+.header__center__logo--right {
+  display: none;
+}
+.header__center__button {
+  transition: all 0.2s;
+  :hover {
+    transition: all 0.2s;
+    transform: scale(1.2);
+  }
+  a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgb(217 46 21);
+    padding: 12px 16px 12px 16px;
+    border-radius: 14px;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: golos-text-500, sans-serif;
+    color: #fff;
+    opacity: 0.9;
+  }
+}
+.header__center__input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border: 2px solid #999;
+  border-radius: 11px;
+  padding: 2px;
+  margin-left: 15px;
+  margin-right: 15px;
+  a {
+    padding: 10px 22px 10px 22px;
+    background-color: rgb(217 46 21);
+    border-radius: 10px;
+  }
+  input {
+    background: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: 0px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+.header__center__nav__list {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #0b2b5e;
+    font-family: golos-text-500, sans-serif;
+    width: 100px;
+  }
+}
+.header__nav {
+  padding-top: 25px;
+  display: flex;
+  gap: 25px;
+}
+.header__nav__list {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+}
+.header__nav__list--two {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+}
+.header__nav__list__item--green {
+  a {
+    font-family: golos-text-500, sans-serif;
+    background-image: url(/image/aksiya.svg);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    min-height: 25px;
+    min-width: 100px;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(255 255 255);
+  }
+}
+.header__nav__list__item {
+  a {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: golos-text-500, sans-serif;
+    color: rgb(108 113 120);
+  }
+}
+@media screen and (max-width: 1398px) {
+  .header__nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__nav__list {
+    gap: 50px;
+  }
+  .header__nav__list--two {
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 1142px) {
+  .header__top {
+    display: none;
+  }
+  .header__center__nav__list {
+    display: none;
+  }
+}
+@media screen and (max-width: 930px) {
+  .header__nav__list {
+    gap: 15px;
+    ul {
+      gap: 15px;
+    }
+  }
+  .header__nav__list--two {
+    gap: 15px;
+    ul {
+      gap: 15px;
+    }
+  }
+}
+@media screen and (max-width: 720px) {
+  .header__nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    .header__nav__list {
+      flex-direction: column;
+      margin-left: auto;
+      ul {
+        flex-direction: column;
+      }
+    }
+    .header__nav__list--two {
+      margin-right: auto;
+      flex-direction: column;
+      text-align: center;
+      ul {
+        flex-direction: column;
+      }
+    }
+  }
+}
+@media screen and (max-width: 630px) {
+  .header__center__logo {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header__center__button {
+    display: none;
+  }
+  .header__center__input {
+    display: none;
+  }
+  .header__center__logo--left {
+    display: block;
+  }
+  .header__center__logo--right {
+    display: block;
+  }
+}
